@@ -1,0 +1,489 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+<script src="jquery-1.11.3.min.js"></script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Russo+One&display=swap" rel="stylesheet">
+
+
+      <!--Import materialize.css-->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+
+</head>
+<style>
+.ui-bar-f {
+    color: #00BAFF;
+    background-color: 00BAFF;
+}
+
+.ui-body-f {
+    font-weight: bold;
+    color: #00BAFF;
+    background-color: 00BAFF;
+}
+
+
+
+.ui-btn-active {
+	background-color: #008abd;
+}
+
+.ui-navbar li .ui-btn .ui-btn-inner, .ui-navbar li .ui-btn {
+    border: 0 solid red !important;
+}
+</style>
+<style>
+a {
+    border: #7F002E;
+    outline: #7F002E;
+}
+.container {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
+  width: 50%;
+}
+.image {
+  display: block;
+  width: 200%;
+  height: auto;
+}
+
+.carousel{
+  margin-top: -110px;
+  margin-bottom: -40px;
+}
+.container{
+  margin-top: -125px;
+  width: 90%;
+
+
+}
+
+h1{
+  font-family: 'Fredoka One', cursive;
+  font-size: 50px;
+  color: #ED6767;
+
+
+
+}
+body {
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-color: #eeeeee;
+}
+
+h3{
+  text-shadow: 2px 2px 10px #000000;  
+}
+
+h5{
+  text-shadow: 2px 2px 10px #000000;
+}
+
+#sidemen{
+  width:100%;
+  margin-top: 0px;
+
+
+
+}
+</style>
+<div data-role="page" id="pageone" data-theme="f">
+  <div data-role="footer" data-position="fixed" data-theme="f">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="home"> </a></li>
+        <li><a href="#pagetwo" data-icon="location"></a></li>
+        <li><a href="#pagethree" data-icon="shop"></a></li>
+        <li><a href="#pagefour" data-icon="alert"></a></li>
+      </ul>
+    </div>
+  </div> 
+  <div class="container">
+        <h1>CaviteKnows</h1>
+
+        <!-- CAROUSEL -->
+        <div class="carousel">
+          <a href="#modal1" class="carousel-item">
+            <img src="001.png" alt="">
+          </a>
+          <a href="#modal2" class="carousel-item">
+            <img src="002.png" alt="">
+          </a>
+          <a href="#modal3" class="carousel-item">
+            <img src="003.png" alt="">
+          </a>
+
+        </div>
+
+        <a href="#pagethree"><img id="sidemen" src="food.png"></a>
+        <a href="#pagetwo"><img id="sidemen" src="trad.png"></a>
+        <a href="#pagetwo"><img id="sidemen" src="history.png"></a>
+
+
+ 
+        <!-- card image -->
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image">
+                <img src="drone3.jpg">
+                <span class="card-title">Cavite City <sub><i>R4-A (4100)</i></sub></span>
+                <a href="#pagetwo" class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add_location</i></a>
+              </div>
+              <div class="card-content">
+                <p>Cavite City, officially the City of Cavite, is a 4th class component city in the province of Cavite, Philippines. According to the 2015 census, it has a population of 102,806 people. Credits to Allan Bella</p>
+                <div class="card-panel teal">
+                  <span class="white-text">Placeholder for alternative photo and description
+                  </span>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- modal -->
+        <!-- MODAL STRUCTURE -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4>Placeholder</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum repellat dignissimos, suscipit earum veniam nihil sed quod dolores molestiae a dolor consequatur ab sunt sequi dicta. Repellendus eveniet itaque beatae.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="" class="modal-action modal-close waves-effect waves-green">Button</a>
+          </div>
+        </div>
+
+        <div id="modal2" class="modal">
+          <div class="modal-content">
+            <h4>Dalahican</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quos harum magnam cupiditate! Tempore, a blanditiis magni architecto quisquam non eos ut quod neque voluptatibus dicta quas! Eveniet, voluptatum est!</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.3810795285895!2d120.88075010064964!3d14.46279383984081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339632a639a34ce1%3A0xf610e5a4fe61957c!2sDalahican%2C%20Cavite%20City%2C%20Cavite!5e0!3m2!1sen!2sph!4v1597542169607!5m2!1sen!2sph" width="320" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+          <br>
+          <br>
+        </div>
+      </div>
+        <div id="modal3" class="modal">
+          <div class="modal-content">
+            <h4>Samonte Park</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quos harum magnam cupiditate! Tempore, a blanditiis magni architecto quisquam non eos ut quod neque voluptatibus dicta quas! Eveniet, voluptatum est!</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.056782691766!2d120.9083631!3d14.4814289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cd39f673b315%3A0x7c26a5a366631102!2sSamonte%20Park%20Rotonda%2C%20San%20Roque%2C%20Cavite%20City%2C%20Cavite!5e0!3m2!1sen!2sph!4v1597542369095!5m2!1sen!2sph" width="320" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+
+        
+
+
+  
+
+</div>
+</div>
+</div>
+</div>
+      
+
+<div data-role="page" id="pagetwo" data-theme="f">
+  <div data-role="footer" data-position="fixed" data-theme="f">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#pageone" data-icon="home"></a></li>
+        <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="location"> </a></li>
+        <li><a href="#pagethree" data-icon="shop"></a></li>
+        <li><a href="#pagefour" data-icon="alert"></a></li>
+      </ul>
+    </div>
+  </div>
+
+  
+
+  <br><br>
+
+<!--
+
+Second Page Code
+
+  !--><div class="container">
+  <h1>Places!</h1>
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="drone1.jpg" alt="">
+        <div class="caption center-align">
+          <h3 class="dropshadow">Name of Place</h3>
+          <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+        </div>
+      </li>
+      <li>
+        <img src="drone2.jpg" alt="">
+        <div class="caption left-align">
+          <h3 class="dropshadow">This is our tagline</h3>
+          <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+        </div>
+      </li>
+      <li>
+        <img src="drone3.jpg" alt="">
+        <div class="caption right-align">
+          <h3 class="dropshadow">This is our tagline</h3>
+          <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+        </div>
+      </li>
+      <li>
+        <img src="drone4.jpg" alt="">
+        <div class="caption right-align">
+          <h3>This is our tagline</h3>
+          <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+        </div>
+      </li>
+      <li>
+        <img src="drone7.jpg" alt="">
+        <div class="caption right-align">
+          <h3 class="dropshadow">This is our tagline</h3>
+          <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+        </div>
+      </li>
+      <li>
+        <img src="drone6.jpg" alt="">
+        <div class="caption right-align">
+          <h3 class="dropshadow">This is our tagline</h3>
+          <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+        </div>
+      </li>
+      <li>
+        <img src="drone8.jpg" alt="">
+        <div class="caption right-align">
+          <h3 class="dropshadow">This is our tagline</h3>
+          <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+        </div>
+      </li>
+      <li>
+        <img src="drone9.jpg" alt="">
+        <div class="caption right-align">
+          <h3 class="dropshadow">This is our tagline</h3>
+          <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+          <div class="card-panel teal">
+             <span class="white-text">Photos courtesy of Allan Bella of Allan Faustino Bella Photography.
+             </span>
+           </div>
+
+           <div class="card-panel orange">
+            <span class="white-text">Places might be renamed history/trad.
+            </span>
+          </div>
+
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="drone2.jpg">
+                  <span class="card-title">Dalahican</span>
+                  <a href="#modalp22" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">map
+                  </i></a>
+                </div>
+                <div class="card-content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ipsum molestiae odio ipsa vel ex accusantium cupiditate laudantium, alias vitae suscipit ullam modi officiis eum iste temporibus veritatis nemo rem.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="drone7.jpg">
+                  <span class="card-title">Samonte Park</span>
+                  <a href="#modalp23" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">map
+                  </i></a>
+                </div>
+                <div class="card-content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ipsum molestiae odio ipsa vel ex accusantium cupiditate laudantium, alias vitae suscipit ullam modi officiis eum iste temporibus veritatis nemo rem.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="modalp23" class="modal">
+            <div class="modal-content">
+              <h4>Samonte Park</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quos harum magnam cupiditate! Tempore, a blanditiis magni architecto quisquam non eos ut quod neque voluptatibus dicta quas! Eveniet, voluptatum est!</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.056782691766!2d120.9083631!3d14.4814289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cd39f673b315%3A0x7c26a5a366631102!2sSamonte%20Park%20Rotonda%2C%20San%20Roque%2C%20Cavite%20City%2C%20Cavite!5e0!3m2!1sen!2sph!4v1597542369095!5m2!1sen!2sph" width="250" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>
+
+
+          <div id="modalp22" class="modal">
+            <div class="modal-content">
+              <h4>Dalahican</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quos harum magnam cupiditate! Tempore, a blanditiis magni architecto quisquam non eos ut quod neque voluptatibus dicta quas! Eveniet, voluptatum est!</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.3810795285895!2d120.88075010064964!3d14.46279383984081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339632a639a34ce1%3A0xf610e5a4fe61957c!2sDalahican%2C%20Cavite%20City%2C%20Cavite!5e0!3m2!1sen!2sph!4v1597542169607!5m2!1sen!2sph" width="250" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+
+        
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+<div data-role="page" id="pagethree" data-theme="f">
+  <div data-role="footer" data-position="fixed" data-theme="f">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#pageone" data-icon="home"></a></li>
+        <li><a href="#pagetwo" data-icon="location"></a></li>
+        <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="shop"></a></li>
+        <li><a href="#pagefour" data-icon="alert"></a></li>
+      </ul>
+    </div>
+  </div>
+<div class="container">
+<h1>
+  Food!
+</h1>
+<div class="card">
+  <div class="card-image waves-effect waves-block waves-light">
+    <img class="activator" src="pp.jpg">
+  </div>
+  <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4">Pansit Pusit<i class="material-icons right">more_vert</i></span>
+    <p><a href="https://www.google.com/maps/place/Bernie's+Kitchenette+-+Cavite+City/@14.479649,120.8973307,17z/data=!4m5!3m4!1s0x3397cd3516143a03:0x9b06d438e308a22e!8m2!3d14.479649!4d120.8973307?hl=en">Buy from Bernie's Kitchenette</a></p>
+  </div>
+  <div class="card-reveal">
+    <span class="card-title grey-text text-darken-4">Pansit Pusit<i class="material-icons right">close</i></span>
+    <br>
+    <p>Pancit choca is a Filipino black seafood noodle dish made with squid ink and bihon. It originates from Cavite, Philippines, and is originally known as pancit choca en su tinta in Caviteño Chavacano. It is also known more commonly as pancit pusit in Filipino. It is a type of pancit. </p>
+    <iframe width=auto src="https://www.youtube.com/embed/LPzy71-M0-g?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    
+  </div>
+  
+</div>
+<div class="card-panel teal">
+  <span class="white-text">
+    <p>
+      Placeholder, need to research more food from locals/cavite city
+    </p>
+  </span>
+</div>
+          
+</div>
+<!--
+
+Third Page Code
+
+  !-->
+
+
+</div>
+</div>
+</div>
+
+<div data-role="page" id="pagefour" data-theme="f">
+  <div data-role="footer" data-position="fixed" data-theme="f">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#pageone" data-icon="home"></a></li>
+        <li><a href="#pagetwo" data-icon="location"></a></li>
+        <li><a href="#pagethree" data-icon="shop"></a></li>
+        <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="alert" ></a></li>
+      </ul>
+      </ul>
+    </div>
+  </div>
+<div class="container">
+  <h1>
+    Safety
+  </h1>
+  <div class="card-panel red">
+    <span class="white-text">Placeholder for Safety/DRRM Info, will put phone number span
+    </span>
+
+<center>
+<p><a href="tel: 046 431 2465"><img src="h1.png" width="300"></a></p>
+<p><a href="tel: 046 431 7859"><img src="h2.png" width="300"></a></p>
+<p><a href="tel: 046 431 0308"><img src="h3.png" width="300"></a></p>
+<p><a href="tel: 046 431 0752"><img src="h4.png" width="300"></a></p>
+<p><a href="tel: 046 431 1703"><img src="h5.png" width="300"></a></p>
+<p><a href="tel: 046 431 2292"><img src="h6.png" width="300"></a></p>
+<p><a href="tel: 046 431 0562"><img src="h7.png" width="300"></a></p>
+<p><a href="tel: 046 431 0462"><img src="h8.png" width="300"></a></p>
+</center>
+  </div>
+</div>
+
+
+<!--
+
+Fourth Page Code
+
+  !-->
+
+
+
+
+</div>
+</div>
+</div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          // Init Carousel
+          $('.carousel').carousel();
+
+          // Init Carousel Slider
+          $('.carousel.carousel-slider').carousel({fullWidth:true});
+
+          // Fire off toast
+          //Materialize.toast('Hello 1ld', 3000);
+
+          // Init Slider
+          $('.slider').slider();
+
+          // Init Modal
+          $('.modal').modal();
+
+          // Init Sidenav
+          $('.button-collapse').sideNav();
+        });
+      </script>
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

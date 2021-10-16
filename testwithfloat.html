@@ -1,0 +1,823 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+<script src="jquery-1.11.3.min.js"></script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Russo+One&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+
+
+      <!--Import materialize.css-->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+
+</head>
+<style>
+.ui-bar-f {
+    color: #00BAFF;
+    background-color: 00BAFF;
+}
+
+.ui-body-f {
+    font-weight: bold;
+    color: #00BAFF;
+    background-color: 00BAFF;
+}
+
+
+
+.ui-btn-active {
+	background-color: #008abd;
+}
+
+.ui-navbar li .ui-btn .ui-btn-inner, .ui-navbar li .ui-btn {
+    border: 0 solid red !important;
+}
+</style>
+<style>
+a {
+    border: #7F002E;
+    outline: #7F002E;
+}
+.container {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
+  width: 50%;
+}
+.image {
+  display: block;
+  width: 200%;
+  height: auto;
+}
+
+.carousel{
+  margin-top: -110px;
+  margin-bottom: -40px;
+}
+.container{
+  margin-top: -125px;
+  width: 90%;
+
+
+}
+
+h1{
+  font-family: 'Fredoka One', cursive;
+  font-size: 50px;
+  color: #ED6767;
+
+
+
+}
+body {
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-color: #eeeeee;
+}
+
+h3{
+  text-shadow: 2px 2px 10px #000000;  
+}
+
+h5{
+  text-shadow: 2px 2px 10px #000000;
+}
+
+
+h4{
+    font-family: 'Fredoka One', cursive;
+  font-size: 20px;
+  color: #ED6767;
+}
+
+#sidemen{
+  width:100%;
+  margin-top: 0px;
+
+
+
+}
+</style>
+
+<div class="fixed-action-btn">
+  <a href="#" class="btn-floating #263238 blue-grey darken-4 btn-large"><i class="large material-icons">arrow_drop_up</i></a>
+  <ul>
+    <li><a href="#pagefour" class="btn-floating #ef5350 red lighten-1 btn-large"><i class="large material-icons">warning</i></a></li>
+    <li><a href="#pagefive" class="btn-floating orange btn-large"><i class="large material-icons">update</i></a></li>
+    <li><a href="#pagethree" class="btn-floating blue btn-large"><i class="large material-icons">local_dining</i></a></li>
+    <li><a href="#pagetwo" class="btn-floating green btn-large"><i class="large material-icons">location_on</i></a></li>
+    <li><a href="#pageone" class="btn-floating red btn-large"><i class="large material-icons">home</i></a></li>
+  </ul>
+</div>
+
+
+<div data-role="page" id="pageone" data-theme="f">
+  <!-- div data-role="footer" data-position="fixed" data-theme="f">
+   
+  </!--> 
+  <div class="container">
+        <h1>CaviteKnows!</h1>
+
+        <!-- CAROUSEL -->
+        <div class="carousel">
+          <a href="#modal1" class="carousel-item">
+            <img src="001.png" alt="">
+          </a>
+          <a href="#modal2" class="carousel-item">
+            <img src="002.png" alt="">
+          </a>
+          <a href="#modal3" class="carousel-item">
+            <img src="003.png" alt="">
+          </a>
+
+        </div>
+        
+
+        <a href="#pagethree"><img id="sidemen" src="food.png"></a>
+        <a href="#pagetwo"><img id="sidemen" src="trad.png"></a>
+        <a href="#pagefive"><img id="sidemen" src="history.png"></a>
+
+
+ 
+        <!-- card image -->
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image">
+                <img src="drone3.jpg">
+                <span class="card-title">Cavite City <sub><i>R4-A (4100)</i></sub></span>
+                <a href="#pagetwo" class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add_location</i></a>
+              </div>
+              <div class="card-content">
+                <p>Cavite City, officially the City of Cavite, is a 4th class component city in the province of Cavite, Philippines. According to the 2015 census, it has a population of 102,806 people. Credits to Allan Bella</p>
+                <div class="card-panel teal">
+                  <span class="white-text">Placeholder for alternative photo and description
+                  </span>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <center>
+            <a onclick="Materialize.toast('CaviteKnows v.2', 2000, 'rounded')" class="btn">Hi!</a>
+            <br>
+          </center>
+        </div>
+
+        <!-- modal -->
+        <!-- MODAL STRUCTURE -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4>Placeholder</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum repellat dignissimos, suscipit earum veniam nihil sed quod dolores molestiae a dolor consequatur ab sunt sequi dicta. Repellendus eveniet itaque beatae.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="" class="modal-action modal-close waves-effect waves-green">Button</a>
+          </div>
+        </div>
+
+        <div id="modal2" class="modal">
+          <div class="modal-content">
+            <h4>Dalahican</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quos harum magnam cupiditate! Tempore, a blanditiis magni architecto quisquam non eos ut quod neque voluptatibus dicta quas! Eveniet, voluptatum est!</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.3810795285895!2d120.88075010064964!3d14.46279383984081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339632a639a34ce1%3A0xf610e5a4fe61957c!2sDalahican%2C%20Cavite%20City%2C%20Cavite!5e0!3m2!1sen!2sph!4v1597542169607!5m2!1sen!2sph" width="320" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+          <br>
+          <br>
+        </div>
+      </div>
+        <div id="modal3" class="modal">
+          <div class="modal-content">
+            <h4>Samonte Park</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quos harum magnam cupiditate! Tempore, a blanditiis magni architecto quisquam non eos ut quod neque voluptatibus dicta quas! Eveniet, voluptatum est!</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.056782691766!2d120.9083631!3d14.4814289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cd39f673b315%3A0x7c26a5a366631102!2sSamonte%20Park%20Rotonda%2C%20San%20Roque%2C%20Cavite%20City%2C%20Cavite!5e0!3m2!1sen!2sph!4v1597542369095!5m2!1sen!2sph" width="320" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+
+
+        
+
+
+  
+
+</div>
+</div>
+</div>
+</div>
+      
+
+<div data-role="page" id="pagetwo" data-theme="f">
+  <!-- div data-role="footer" data-position="fixed" data-theme="f">
+
+    </div>
+  </div>
+
+  
+
+  <br><br>
+
+<!--
+
+Second Page Code
+
+  !--><div class="container">
+  <h1>Places!</h1>
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="drone1.jpg" alt="">
+        <div class="caption center-align">
+          <h3 class="dropshadow">Name of Place</h3>
+          <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+        </div>
+      </li>
+      <li>
+        <img src="drone2.jpg" alt="">
+        <div class="caption left-align">
+          <h3 class="dropshadow">This is our tagline</h3>
+          <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+        </div>
+      </li>
+      <li>
+        <img src="drone3.jpg" alt="">
+        <div class="caption right-align">
+          <h3 class="dropshadow">This is our tagline</h3>
+          <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+        </div>
+      </li>
+      <li>
+        <img src="drone4.jpg" alt="">
+        <div class="caption right-align">
+          <h3>This is our tagline</h3>
+          <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+        </div>
+      </li>
+      <li>
+        <img src="drone7.jpg" alt="">
+        <div class="caption right-align">
+          <h3 class="dropshadow">This is our tagline</h3>
+          <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+        </div>
+      </li>
+      <li>
+        <img src="drone6.jpg" alt="">
+        <div class="caption right-align">
+          <h3 class="dropshadow">This is our tagline</h3>
+          <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+        </div>
+      </li>
+      <li>
+        <img src="drone8.jpg" alt="">
+        <div class="caption right-align">
+          <h3 class="dropshadow">This is our tagline</h3>
+          <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+        </div>
+      </li>
+      <li>
+        <img src="drone9.jpg" alt="">
+        <div class="caption right-align">
+          <h3 class="dropshadow">This is our tagline</h3>
+          <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+          <div class="card-panel teal">
+             <span class="white-text">Photos courtesy of Allan Bella of Allan Faustino Bella Photography.
+             </span>
+           </div>
+
+
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="samonte.png">
+                  <span class="card-title">Samonte Park</span>
+                  <a href="#modalsamonte" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">map
+                  </i></a>
+                </div>
+                <div class="card-content">
+                  <h4>
+                    The dusk shines brighter in the heart of the city                    
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="muralla.jpg">
+                  <span class="card-title">Muralla</span>
+                  <a href="#modalsamonte" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">map
+                  </i></a>
+                </div>
+                <div class="card-content">
+                  <h4>
+                    A place where you can take a breath                  
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="cnhs.jpg">
+                  <span class="card-title">Cavite National HS</span>
+                  <a href="#modalcnhs" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">map
+                  </i></a>
+                </div>
+                <div class="card-content">
+                  <h4>
+                    A footprint from the past
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="ldes.png">
+                  <span class="card-title">Ladislao Diwa Shrine</span>
+                  <a href="#modalldes" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">map
+                  </i></a>
+                </div>
+                <div class="card-content">
+                  <h4>
+                    Here lies the hero from the history
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="corr.png">
+                  <span class="card-title">Corregidor</span>
+                  <a href="#modalcorr" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">map
+                  </i></a>
+                </div>
+                <div class="card-content">
+                  <h4>
+                    The memorial ruins
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div id="modalmuralla" class="modal">
+            <div class="modal-content">
+              <h4>Muralla – A place where you can take a breath</h4>
+              <p>Muralla is the go to places of all citizens of Cavite City especially in the night. In here, you can eat variety of foods such as barbeques, the famous “tusok-tusok”, as well as your average rice meal. They also provide different refreshments like sodas, juice, shakes, and, of course, milktea. Since it is a place where it does not have a single theme, its best to try every single booth to savor the experience just like the saying “the more the merrier”</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d482.88255036598935!2d120.9071519!3d14.481221!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cd89f313136b%3A0x97321521da43a0ac!2sMuralla%20de%20Cavite!5e0!3m2!1sen!2sph!4v1597729094200!5m2!1sen!2sph" width="250" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>
+
+          <div id="modalcnhs" class="modal">
+            <div class="modal-content">
+              <h4>Cavite National High School</h4>
+              <p>Cavite National High School (CNHS) is located at Cavite City in the Philippines. It was established in June 19, 1902 and it is considered as one of the oldest national secondary schools in the country. With the ever growing world of technology, it certainly does not fall behind but that doesn’t mean the school is being changed. The design of the library building as well as its right and left wing was specifically modified to stay the same to honor its age. And that’s why it is one of the most treasured places in Cavite City.</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.0297121984204!2d120.8940422148388!3d14.482983389877477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cd34afaf6155%3A0xbd449044399e031c!2sCavite%20National%20High%20School!5e0!3m2!1sen!2sph!4v1597728968206!5m2!1sen!2sph" width="250" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>
+
+
+          <div id="modalsamonte" class="modal">
+            <div class="modal-content">
+              <h4>Samonte Park</h4>
+              <p>One place that is being adored by a lot of people in the city is their Samonte Park. The best time for you to visit and check out the place is during the night. In the morning you can see a lot of people taking a walk in the place and enjoy the beauty of nature but during the night, everything will be even more exciting. There would be lights in each stop of the place and you could see a lot more vendors that are just starting to set up their products along the specified sidewalk area. During the night, the true life in Samonte Park shines better.
+                <br> Photo credits to Allan Bella
+              </p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3863.0574356962743!2d120.9088054!3d14.4813914!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cd39f5fcd0a7%3A0xde133e00ca5e507c!2sRamon%20Quijano%20Samonte%20Park!5e0!3m2!1sen!2sph!4v1597728467917!5m2!1sen!2sph" width="250" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>
+
+            
+          <div id="modalldes" class="modal">
+            <div class="modal-content">
+              <h4>Ladislao Diwa Shrine</h4>
+              <p>Ladislao Diwa y Nocon (June 27, 1863 − March 12, 1930) was a Filipino patriot who was among the founders of the Katipunan that initiated the Philippine Revolution against Spain in 1896. Specifically, Don Ladislao Diwa is well remembered as the co-founder of the KKK (Kataastaasang, Kagalanggalangan, Katipunan). The National Historical Institute(NHI) declared his ancestral home as a national shrine. On November 30, l996, his mortal remains were transferred to the Ladislao Diwa Mausoleum on the grounds of the Shrine. Credits to Cavite.gov.ph
+              </p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.0941547002467!2d120.89042651483877!3d14.47928258987982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339632ca7cab835d%3A0x1d00322b0ed7d228!2sLadislao%20Diwa%20Shrine!5e0!3m2!1sen!2sph!4v1597729546978!5m2!1sen!2sph" width="250" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>
+
+                    
+          
+          <div id="modalcorr" class="modal">
+            <div class="modal-content">
+              <h4>Corregidor</h4>
+              <p>Corregidor Island is an island located at the entrance of Manila Bay in southwestern part of Luzon Island in the Philippines. Due to this location, Corregidor has historically been fortified with coastal artillery to defend the entrance of Manila Bay and Manila from attacks by enemy warships. Corregidor (Fort Mills) is the largest of the islands that formed the harbor defenses of Manila Bay, together with El Fraile Island (Fort Drum), Caballo Island (Fort Hughes) and Carabao Island (Fort Frank), which were all fortified during the American colonial period. The island was also the site of a small military airfield, as part of the defense.
+              </p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61836.18477607921!2d120.55711066023511!3d14.383203624858528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396211bdb6ecb13%3A0x3d166974d7e56a0!2sCorregidor%20Island!5e0!3m2!1sen!2sph!4v1597729690469!5m2!1sen!2sph" width="250" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>
+                  
+
+
+
+        
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+<div data-role="page" id="pagethree" data-theme="f">
+<div class="container">
+<h1>
+  Food!
+</h1>
+<div class="card">
+  <div class="card-image waves-effect waves-block waves-light">
+    <img class="activator" src="pp.jpg">
+  </div>
+
+  <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4">Pansit Pusit<i class="material-icons right">more_vert</i></span>
+    <p><a href="https://www.google.com/maps/place/Bernie's+Kitchenette+-+Cavite+City/@14.479649,120.8973307,17z/data=!4m5!3m4!1s0x3397cd3516143a03:0x9b06d438e308a22e!8m2!3d14.479649!4d120.8973307?hl=en">Buy from Bernie's Kitchenette</a></p>
+  </div>
+
+  <div class="card-reveal">
+    <span class="card-title grey-text text-darken-4">Pansit Pusit<i class="material-icons right">close</i></span>
+    <br>
+    <iframe width=auto src="https://www.youtube.com/embed/LPzy71-M0-g?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+    <p>Pancit choca is a Filipino black seafood noodle dish made with squid ink and bihon. It originates from Cavite, Philippines, and is originally known as pancit choca en su tinta in Caviteño Chavacano. It is also known more commonly as pancit pusit in Filipino. It is a type of pancit. </p>
+
+  </div>
+</div>
+
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="bacalao.jpg">
+    </div>
+
+  <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4">Bacalao<i class="material-icons right">more_vert</i></span>
+    <p><a href="https://goo.gl/maps/XN86Sm3ncvNgitbQ6">Buy from Violy's Cuisine</a></p>
+  </div>
+
+  <div class="card-reveal">
+    <span class="card-title grey-text text-darken-4">Bacalao<i class="material-icons right">close</i></span>
+    <br>
+    <iframe width=auto src="https://www.youtube.com/embed/dX10P4ZH6Jo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>A popular salted cod fish dish present in every Caviteñean house every Lenten season most especially on Good Friday. This is one the many dish inherited from the Portuguese galleon traders that pre-dates Spanish occupation wich uses dry salted labahita as main ingredient. Photo from LutongCavite.Blogspot.com </p>
+
+
+  </div>
+</div>
+
+  
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="tamales.png">
+    </div>
+
+  <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4">Tamales<i class="material-icons right">more_vert</i></span>
+    <p><a href="https://goo.gl/maps/oxcNywdWWgXrk5C9A">Buy from Orence Food House</a></p>
+  </div>
+
+  <div class="card-reveal">
+    <span class="card-title grey-text text-darken-4">Tamales<i class="material-icons right">close</i></span>
+    <br>
+    <iframe width=auto src="https://www.youtube.com/embed/nuqzAeF_tVk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>One of the most favorite delicacies of Cavite City and bread filling by pure blooded Caviteno. Made of ground peanuts and galapong that is steamed and wrapped in banana leaves. It looks simple at first sight but requires a very tedious process to make. The most popular brand of tamales is named after the current owner’s great grandfather Henry Benjamin Robinson, a former staff member of the USS Olympia under Admiral George Dewey. Photo from Yummy.ph</p>
+   </div>
+  </div>
+
+
+    
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="kilawin.png">
+    </div>
+
+  <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4">Kilawin<i class="material-icons right">more_vert</i></span>
+    <p><a href="https://goo.gl/maps/XN86Sm3ncvNgitbQ6">Buy from Violy's Cuisine</a></p>
+  </div>
+
+  <div class="card-reveal">
+    <span class="card-title grey-text text-darken-4">Kilawin<i class="material-icons right">close</i></span>
+    <br>
+    <iframe width=auto src="https://www.youtube.com/embed/nuqzAeF_tVk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>Caviteñean kilawin is not made of raw fish but rather of grated green papaya cooked in vinegar with grilled mashed pancreas and chopped librillo of cows. It is one of the most famous and highly favorite dish best eaten and paired with Adobo and Kare-Kare during Sundays. Photo from LutongCavite.Blogspot.com</p>
+   </div>
+  </div>
+
+    
+   <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="puso.png">
+    </div>
+
+  <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4">Pancit Puso/Kawali<i class="material-icons right">more_vert</i></span>
+    <p><a href="https://goo.gl/maps/o9StxByhcKcCYgdv6">Buy from Asao Grill Steak  House</a></p>
+  </div>
+
+  <div class="card-reveal">
+    <span class="card-title grey-text text-darken-4">Pancit Puso/Kawali<i class="material-icons right">close</i></span>
+    <br>
+    <iframe width=auto src="https://www.youtube.com/embed/BghQEJPoHHw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>A Caviteñean style pansit made of combination of bihon and miki bihon cooked in achuete with small slices of pork and thinly sliced green beans, carrots and cabbage. Rather than calamansi as paasim, pansit puso is served with thinly sliced puso ng saging (banana blossom) cooked in generous amount of vinegar.Photo from yummy.ph</p>
+   </div>
+</div>
+
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="ps.png">
+    </div>
+
+  <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4">PAT and SAM’s Bibingka/Samala<i class="material-icons right">more_vert</i></span>
+    <p><a href="https://goo.gl/maps/fniTtHYD8KovCZyr6">Buy from Pat and Sam</a></p>
+  </div>
+
+  <div class="card-reveal">
+    <span class="card-title grey-text text-darken-4">PAT and SAM’s Bibingka/Samala<i class="material-icons right">close</i></span>
+    <br>
+    <iframe width=auto src="https://www.youtube.com/embed/7Du9sCFmWQg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>This famous bibingka from Cavite City is actually a biko than a bibingka. It comes in two varieties: malagkit and pinipig. This sweet smelling kakanin has the aroma of coconut oil,panocha and burnt banana leaf. The rice cakes are named after Arturo Samala, who established the business in 1940’s. Photo from spot. Ph  & lutongcavite.blogspot.com
+    </p>
+  </div>
+  </div>
+
+
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="alingika.png">
+    </div>
+
+  <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4">Aling Ika's Bibingka<i class="material-icons right">more_vert</i></span>
+    <p><a href="https://goo.gl/maps/CAkaJ5SXrUjSQ3yNA">Buy from Aling Ika</a></p>
+  </div>
+
+  <div class="card-reveal">
+    <span class="card-title grey-text text-darken-4">Aling Ika's Bibingka<i class="material-icons right">close</i></span>
+    <br>
+    <iframe width=auto src="https://www.youtube.com/embed/7Du9sCFmWQg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>
+      Bibingkoy is the classic Chabacano adaptation of the tang yuan. Patties of galapong are prepared and filled with sweetened red mongo bean paste. The patties are lightly arranged in baking pan and cooked in the manner of bibingka. It is served with thick soup  made from gata (coconut cream), with added pieces of camote, langka, bilo-bilo, flavored with pandan and sweetened with panocha. Photo from lutongcavite.blogspot.com
+      
+    </p>
+  </div>
+  </div>
+
+
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="dizon.png">
+    </div>
+
+  <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4">Dizon's Quesillo<i class="material-icons right">more_vert</i></span>
+    <p><a href="https://goo.gl/maps/CAkaJ5SXrUjSQ3yNA">Buy from Dizon’s Bakery</a></p>
+  </div>
+
+  <div class="card-reveal">
+    <span class="card-title grey-text text-darken-4">Dizon's Quesillo<i class="material-icons right">close</i></span>
+    <br>
+    <iframe width=auto src="https://www.youtube.com/embed/rDYvm2OyYyE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>
+      Kesong puti or quesillo as how we call it here in Cavite  is a proudly Philippine cheese made of carabao’s milk. Traditionally it is sold wrapped in banana leaves. Photo from spot.ph
+      
+    </p>
+  </div>
+  </div>
+
+
+
+<div class="card-panel teal">
+  <span class="white-text">
+    <p>
+      Placeholder, need to research more food from locals/cavite city
+    </p>
+  </span>
+</div>
+          
+</div>
+<!--
+
+Third Page Code
+
+  !-->
+
+
+</div>
+</div>
+</div>
+
+<div data-role="page" id="pagefour" data-theme="f">
+
+<div class="container">
+  <h1>
+    Safety
+  </h1>
+  <div class="card-panel red">
+    <span class="white-text">
+    </span>
+
+<style>
+
+
+
+  h2{
+    font-size: 20px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    margin-left: -10px;
+    font-family: 'Patua One', cursive;
+  }
+</style>
+
+  <div class="card blue-grey darken-1">
+    <div class="card-content white-text">
+      <span class="card-title"><h2>Checkpoint (431-2456)</h2></span><a href="tel: 046 431 2465" class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">phone</i></a>
+    </div>
+  </div>
+<br>
+  <div class="card blue-grey darken-1">
+    <div class="card-content white-text">
+      <span class="card-title"><h2>DSWD (431 7859)</h2></span><a href="tel: 046 431 7859" class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">phone</i></a>
+    </div>
+  </div>
+
+  <br>
+  <div class="card blue-grey darken-1">
+    <div class="card-content white-text">
+      <span class="card-title"><h2>Fire Station (431 0308)</h2></span><a href="tel: 046 431 0308" class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">phone</i></a>
+    </div>
+  </div>
+
+  <br>
+  <div class="card blue-grey darken-1">
+    <div class="card-content white-text">
+      <span class="card-title"><h2>Health Dept (431 0752)</h2></span><a href="tel: 046 431 0752" class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">phone</i></a>
+    </div>
+  </div>
+
+<br>
+  <div class="card blue-grey darken-1">
+    <div class="card-content white-text">
+      <span class="card-title"><h2>Meralco (417 1703)</h2></span><a href="tel: 046 417 1703" class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">phone</i></a>
+    </div>
+  </div>
+
+  <br>
+  <div class="card blue-grey darken-1">
+    <div class="card-content white-text">
+      <span class="card-title"><h2>Police Station (431 2292)</h2></span><a href="tel: 046 431 2292" class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">phone</i></a>
+    </div>
+  </div>
+
+  <br>
+  <div class="card blue-grey darken-1">
+    <div class="card-content white-text">
+      <span class="card-title"><h2>Red Cross (431 0562)</h2></span><a href="tel: 046 431 0562" class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">phone</i></a>
+    </div>
+  </div>
+
+  <br>
+  <div class="card blue-grey darken-1">
+    <div class="card-content white-text">
+      <span class="card-title"><h2>Radio Room (431 0462)</h2></span><a href="tel: 046 431 0462" class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">phone</i></a>
+    </div>
+  </div>
+ <br>
+ <br>
+ <br>
+  </div>
+</div>
+
+
+<!--
+
+Fourth Page Code
+
+  !-->
+</div>
+</div>
+</div>
+</div>
+
+
+  <div data-role="page" id="pagefive" data-theme="f">
+
+  <div class="container">
+    <h1>
+      History!
+    </h1>
+    <iframe width=100% height=180px src="https://www.youtube.com/embed/bYx2a9JGaj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <div class="card-panel white">
+      <span class="white-text"><h4>
+        Placeholder for CC History
+      </h4>
+      </span>
+    </div>
+
+            <ul class="collapsible" data-collapsible="accordion">
+              <li>
+                <div class="collapsible-header">
+                  <i class="material-icons">update</i>Story 1
+                </div>
+                <div class="collapsible-body active blue lighten-3">
+                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, totam?</span>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header ">
+                  <i class="material-icons">update</i>Story 2
+                </div>
+                <div class="collapsible-body red lighten-3">
+                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, totam?</span>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">
+                  <i class="material-icons">update</i>Story 3
+                </div>
+                <div class="collapsible-body green">
+                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, totam?</span>
+                </div>
+              </li>
+            </ul>
+    
+
+
+</div>
+</div>
+</div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          // Init Carousel
+          $('.carousel').carousel();
+
+          // Init Carousel Slider
+          $('.carousel.carousel-slider').carousel({fullWidth:true});
+
+          // Fire off toast
+          //Materialize.toast('Hello 1ld', 3000);
+
+          // Init Slider
+          $('.slider').slider();
+
+          // Init Modal
+          $('.modal').modal();
+
+          // Init Sidenav
+          $('.button-collapse').sideNav();
+        });
+      </script>
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
