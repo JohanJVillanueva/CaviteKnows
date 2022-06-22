@@ -1,11 +1,1102 @@
-<<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+<script src="jquery-1.11.3.min.js"></script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Russo+One&display=swap" rel="stylesheet">
+
+
+      <!--Import materialize.css-->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+
 </head>
-<body>
-<meta http-equiv="refresh" content="0; url="https://johanjvillanueva.github.io/CaviteKnows/Dev2/index.html">
-</body>
-</html>
+<style>
+
+
+
+.ui-body-f {
+    font-weight: bold;
+    color: #00BAFF;
+    background-color: 00BAFF;
+}
+
+.ui-bar-f {
+    color: #ffffff;
+    background-color: 00BAFF;
+}
+
+
+.ui-btn-active {
+	background-color: #ffffff;
+}
+
+.ui-navbar li .ui-btn .ui-btn-inner, .ui-navbar li .ui-btn {
+    border: 0 solid red !important;
+}
+
+
+</style>
+<style>
+a {
+    border: #7F002E;
+    outline: #7F002E;
+}
+
+.container {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
+  width: 50%;
+}
+.image {
+  display: block;
+  width: 200%;
+  height: auto;
+}
+
+.carousel{
+  margin-top: -110px;
+  margin-bottom: -40px;
+}
+.container{
+  margin-top: -125px;
+  width: 90%;
+
+
+}
+
+
+
+
+
+h1{
+  font-family: 'Fredoka One', cursive;
+  font-size: 50px;
+  color: #ED6767;
+
+}
+
+h2{
+  font-family: 'Fredoka One', cursive;
+  font-size: 30px;
+  color: #ffffff;
+
+}
+
+h4{
+  font-family: 'Fredoka One', cursive;
+  font-size: 30px;
+  color: #ED6767;
+
+}
+
+body {
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-color: #eeeeee;
+  background-size: cover;
+}
+
+
+
+
+h3{
+  text-shadow: 2px 2px 10px #000000;  
+}
+
+h5{
+  text-shadow: 2px 2px 10px #000000;
+}
+
+#sidemen{
+  width:100%;
+  margin-top: 0px;
+
+
+
+}
+</style>
+<div data-role="page" id="pageone" data-theme="f" data-transition="slidefade">
+  <div data-role="footer" data-position="fixed"  data-theme="f">
+    <!--
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="home"> </a></li>
+        <li><a href="#pagetwo" data-icon="location"></a></li>
+        <li><a href="#pagethree" data-icon="shop"></a></li>
+        <li><a href="#pagefour" data-icon="alert"></a></li>
+      </ul>
+    </div> 
+  -->
+  </div> 
+
+
+
+  <div class="container">
+        <h1>CaviteKnows</h1>
+
+
+
+        <div class="fixed-action-btn">
+          <a href="#" class="btn-floating red btn-large"><i class="large material-icons">map</i></a>
+          <ul>
+            <li><a href="#" class="btn-floating purple btn-large" data-transition="slidefade"><i class="large material-icons">home</i></a></li>
+            <li><a href="#pagetwo" class="btn-floating blue btn-large" data-transition="slidefade"><i class="large material-icons">place</i></a></li>
+            <li><a href="#pagethree" class="btn-floating green btn-large" data-transition="slidefade"><i class="large material-icons">local_mall</i></a></li>
+            <li><a href="#pagefive" class="btn-floating orange darken-3 btn-large" data-transition="slidefade"><i class="large material-icons">history</i></a></li>
+            <li><a href="#pagefour" class="btn-floating orange btn-large" data-transition="slidefade"><i class="large material-icons">report_problem</i></a></li>
+            <!-- History and Trad-->
+
+          </ul>
+        </div>
+
+
+
+
+
+
+        <!-- CAROUSEL -->
+        <div class="carousel">
+          <a href="#pagetwo" class="carousel-item">
+            <img src="001.png" alt="">
+          </a>
+          <a href="#pagetwo" class="carousel-item">
+            <img src="002.png" alt="">
+          </a>
+          <a href="#pagetwo" class="carousel-item">
+            <img src="003.png" alt="">
+          </a>
+
+        </div>
+
+        <a href="#pagethree"><img id="sidemen" src="food.png"></a>
+        <a href="#pagefive"><img id="sidemen" src="trad.png"></a>
+        <a href="#pagefive"><img id="sidemen" src="history.png"></a>
+
+
+
+       <div class="card-panel yellow darken-3">
+         <span class="white-text">         
+            <center>
+          <video class="tourism" width="325"  autoplay muted loop controls>
+            <source src="tourism.mp4" type="video/mp4">
+          </video>
+          <h2> This is Cavite City!</h2>
+          </center>
+         </span>
+       </div>
+
+
+        <!-- card image -->
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image">
+                
+
+                <img src="ccbg.jpg">
+                <span class="card-title">Cavite City <sub><i>R4-A (4100)</i></sub></span>
+                <a href="#pagetwo" class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add_location</i></a>
+              </div>
+              <div class="card-content">
+                <p>Cavite City, officially the City of Cavite, is a 4th class component city in the province of Cavite, Philippines. According to the 2015 census, it has a population of 102,806 people. Credits to Allan Bella</p>
+                <div class="card-panel teal">
+                  <span class="white-text">Come and Explore Cavite City with the Caviteknows App!
+                  </span>
+                </div>
+              </div>
+              <div class="card-panel teal">
+                <span class="white-text">All the Drone Shots of Cavite are courtesy of Allan F. Bella
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+ 
+
+
+        <!-- modal -->
+        <!-- MODAL STRUCTURE -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4>Placeholder</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum repellat dignissimos, suscipit earum veniam nihil sed quod dolores molestiae a dolor consequatur ab sunt sequi dicta. Repellendus eveniet itaque beatae.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="" class="modal-action modal-close waves-effect waves-green">Button</a>
+          </div>
+        </div>
+
+        <div id="modal2" class="modal">
+          <div class="modal-content">
+            <h4>Dalahican</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quos harum magnam cupiditate! Tempore, a blanditiis magni architecto quisquam non eos ut quod neque voluptatibus dicta quas! Eveniet, voluptatum est!</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.3810795285895!2d120.88075010064964!3d14.46279383984081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339632a639a34ce1%3A0xf610e5a4fe61957c!2sDalahican%2C%20Cavite%20City%2C%20Cavite!5e0!3m2!1sen!2sph!4v1597542169607!5m2!1sen!2sph" width="320" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+          <br>
+          <br>
+        </div>
+      </div>
+        <div id="modal3" class="modal">
+          <div class="modal-content">
+            <h4>Samonte Park</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quos harum magnam cupiditate! Tempore, a blanditiis magni architecto quisquam non eos ut quod neque voluptatibus dicta quas! Eveniet, voluptatum est!</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.056782691766!2d120.9083631!3d14.4814289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cd39f673b315%3A0x7c26a5a366631102!2sSamonte%20Park%20Rotonda%2C%20San%20Roque%2C%20Cavite%20City%2C%20Cavite!5e0!3m2!1sen!2sph!4v1597542369095!5m2!1sen!2sph" width="320" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+
+        <!-- added -->
+
+        
+
+        
+
+
+  
+
+</div>
+</div>
+</div>
+</div>
+      
+
+<div data-role="page" id="pagetwo" data-theme="f" data-transition="slidefade">
+  <div data-role="footer" data-position="fixed" data-theme="f">
+    <!--
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="home"> </a></li>
+        <li><a href="#pagetwo" data-icon="location"></a></li>
+        <li><a href="#pagethree" data-icon="shop"></a></li>
+        <li><a href="#pagefour" data-icon="alert"></a></li>
+      </ul>
+    </div> 
+  -->
+  </div>
+
+  <div class="fixed-action-btn">
+    <a href="#" class="btn-floating red btn-large"><i class="large material-icons">map</i></a>
+    <ul>
+      <li><a href="#pageone" class="btn-floating purple btn-large" data-transition="slidefade"><i class="large material-icons">home</i></a></li>
+      <li><a href="#pagetwo" class="btn-floating blue btn-large" data-transition="slidefade"><i class="large material-icons">place</i></a></li>
+      <li><a href="#pagethree" class="btn-floating green btn-large" data-transition="slidefade"><i class="large material-icons">local_mall</i></a></li>
+      <li><a href="#pagefive" class="btn-floating orange darken-3 btn-large" data-transition="slidefade"><i class="large material-icons">history</i></a></li>
+      <li><a href="#pagefour" class="btn-floating orange btn-large" data-transition="slidefade"><i class="large material-icons">report_problem</i></a></li>
+
+
+    </ul>
+  </div>
+  
+
+  <br><br>
+
+<!--
+
+Second Page Code
+
+  !--><div class="container">
+  <h1>Places!</h1>
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="drone3.jpg" alt="">
+        <div class="caption center-align">
+          <h3 class="dropshadow">Cavite City</h3>
+          <h5 class="light grey-text text-lighten-3">A city surrounded by three bays, and beautiful sunsets</h5>
+        </div>
+      </li>
+      <li>
+        <img src="drone2.jpg" alt="">
+        <div class="caption left-align">
+          <h3 class="dropshadow">Dalahican</h3>
+          <h5 class="light grey-text text-lighten-3">Home of the most beautiful sunsets in the city.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="drone1.jpg" alt="">
+        <div class="caption right-align">
+          <h3 class="dropshadow">Fort San Felipe</h3>
+          <h5 class="light grey-text text-lighten-3">a military fortress in Cavite City, also the first port town of Cavite.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="drone7.jpg" alt="">
+        <div class="caption right-align">
+          <h3 class="dropshadow">Muralla</h3>
+          <h5 class="light grey-text text-lighten-3">A place to relax, eat and view the beautiful bay.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="drone8.jpg" alt="">
+        <div class="caption right-align">
+          <h3 class="dropshadow">Samonte Park at Night</h3>
+          <h5 class="light grey-text text-lighten-3">Street foods to your hearts content</h5>
+        </div>
+      </li>
+      <li>
+        <img src="drone9.jpg" alt="">
+        <div class="caption right-align">
+          <h3 class="dropshadow">Cavite City Ferry Port</h3>
+          <h5 class="dropshadow">Reach your destination through the sea</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+              <h2>Visit the places of the City!</h2>
+              
+                <div class="row">
+                  <div class="col s12 m6">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="drone1.jpg">
+                        <span class="card-title">Fort San Felipe</span>
+                        <a href="#modalp22" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">map
+                        </i></a>
+                      </div>
+                      <div class="card-content">
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 1 for Fort San Felipe-->
+                <div class="card horizontal">
+                  <div class="card-image">
+                    <img src="julianfelipe.jpg">
+                  </div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <h4> J. Felipe Monument</h4>
+                      <p></p>
+                    </div>
+                    <div class="card-action">
+                      <a href="#modalfelipe" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">map
+                      </i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col s12 m6">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="ldes.png">
+                        <span class="card-title">Ladislao Diwa Shrine</span>
+                        <a href="#modalladislao" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">map
+                        </i></a>
+                      </div>
+                      <div class="card-content">
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col s12 m6">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="sanroque2.jpg">
+                        <span class="card-title">San Roque Church</span>
+                        <a href="#modalsanroque" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">map
+                        </i></a>
+                      </div>
+                      <div class="card-content">
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col s12 m6">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="corregidor.jpg">
+                        <span class="card-title">Corregidor</span>
+                        <a href="#modalcorregidor" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">map
+                        </i></a>
+                      </div>
+                      <div class="card-content">
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+              <h2> Places to Relax in the City</h2>
+            <!-- Card 1 for Samonte Park-->     
+
+
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="SamonteHero.jpg">
+                  <span class="card-title">Samonte Park</span>
+                  <a href="#modalmuralla" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">map
+                  </i></a>
+                </div>
+                <div class="card-content">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+               
+
+           <!-- Modal 1 for Fort San Felipe-->  
+           <div id="modalp22" class="modal">
+            <div class="modal-content">
+              <h4>Fort San Felipe</h4>
+              <p>Fort San Felipe is a military fortress in Cavite City, in the Province of Cavite, Philippines. It was constructed by the Spanish military in 1609 in the first port town of Cavite, the historic core of the present and larger Cavite City, for its protection. Less than half of the original historic structure survives today. The remaining structure is made of granite blocks with 30-foot high walls and features a wide stairway leading to the top of the bastions and remaining walls. Naval memorabilia including antique cannons and cannonballs decorate the lawns of the fortification. Fort San Felipe is located within the 9-hectare (22-acre) Naval Base Cavite of the Philippine Navy and is not open to the public.</p>
+              <iframe width="250" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=fort%20san%20felipe&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            </div>
+            </div>
+
+          <!-- Modal 2 for Samonte Park-->  
+          <div id="modalsanroque" class="modal">
+            <div class="modal-content">
+              <h4>San Roque Church</h4>
+              <p>San Roque Parish Church, simply known in Cavite City as "San Roque", is a church that was built more than 300 years ago. Although there have been numerous renovations, the stories within the windows and the beauty of the church will still give you wonders!</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.056782691766!2d120.9083631!3d14.4814289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cd39f673b315%3A0x7c26a5a366631102!2sSamonte%20Park%20Rotonda%2C%20San%20Roque%2C%20Cavite%20City%2C%20Cavite!5e0!3m2!1sen!2sph!4v1597542369095!5m2!1sen!2sph" width="250" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>
+
+                    <!-- Modal 3 for Julian Felipe-->  
+          <div id="modalfelipe" class="modal">
+            <div class="modal-content">
+              <h4>Julian Felipe Monument</h4>
+              <p>Did you know that Julian Felipe was born on this very land of ours? Yes, you can even search it up! A commemorative bust was built for him to honor his achievements such as our national anthem “Lupang Hinirang” and being one of the heroes from the past.</p>
+              <iframe width="250" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=julian%20felipe%20monument&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+          </div>
+
+           <!-- Modal 4 for Ladislao-->  
+          <div id="modalladislao" class="modal">
+            <div class="modal-content">
+              <h4>Ladislao Diwa Shrine</h4>
+              <p>Visit Don Ladislao Diwa! He is the co-founder of the KKK (Kataastaasang, Kagalanggalangan, Katipunan) and an unsung hero. This is his ancestral home and his remains was burried on the actual grounds of the Shrine.</p>
+              <iframe width="250" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=ladislao%20diwa%20shrine&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+          </div>
+
+          <!-- corregidor-->
+          <div id="modalcorregidor" class="modal">
+            <div class="modal-content">
+              <h4>Corregidor</h4>
+              <p>An island with scars of the second world war. This war memorial and national monument is a frightening yet amazing place to visit. In this place, you can view the artillery and different buildings, tunnels and strategic hideouts where the scars of the past can be seen.</p>
+              <iframe width="200" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=corregidor&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+          </div>
+
+          <div id="modalmuralla" class="modal">
+            <div class="modal-content">
+              <h4>Samonte Park</h4>
+              <p>Muralla is the spot to be when you just want to relax, eat some streets foods and chill with your friends, all while watching the beautiful sunset that awaits.</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.056782691766!2d120.9083631!3d14.4814289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cd39f673b315%3A0x7c26a5a366631102!2sSamonte%20Park%20Rotonda%2C%20San%20Roque%2C%20Cavite%20City%2C%20Cavite!5e0!3m2!1sen!2sph!4v1597542369095!5m2!1sen!2sph" width="250" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>
+
+          <div id="modalsanroque" class="modal">
+            <div class="modal-content">
+              <h4>San Roque Church</h4>
+              <p>San Roque Parish Church, simply known in Cavite City as "San Roque", is a church that was built more than 300 years ago. Although there have been numerous renovations, the stories within the windows and the beauty of the church will still give you wonders!</p>
+              <iframe width="200" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=san%20roque%20church%20cavite%20city&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+          </div>
+                 
+
+          <div class="card-panel teal">
+            <span class="white-text">All the Drone Shots of Cavite are courtesy of Allan F. Bella
+            </span>
+          </div>
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+<div data-role="page" id="pagethree" data-theme="f" data-transition="slidefade">
+  <div data-role="footer" data-position="fixed" data-theme="f">
+    <!--
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="home"> </a></li>
+        <li><a href="#pagetwo" data-icon="location"></a></li>
+        <li><a href="#pagethree" data-icon="shop"></a></li>
+        <li><a href="#pagefour" data-icon="alert"></a></li>
+      </ul>
+    </div> 
+  -->
+  </div>
+<div class="container">
+
+  <div class="fixed-action-btn">
+    <a href="#" class="btn-floating red btn-large"><i class="large material-icons">map</i></a>
+    <ul>
+      <li><a href="#pageone" class="btn-floating purple btn-large" data-transition="slidefade"><i class="large material-icons">home</i></a></li>
+      <li><a href="#pagetwo" class="btn-floating blue btn-large" data-transition="slidefade"><i class="large material-icons">place</i></a></li>
+      <li><a href="#pagethree" class="btn-floating green btn-large" data-transition="slidefade"> <i class="large material-icons">local_mall</i></a></li>
+      <li><a href="#pagefive" class="btn-floating orange darken-3 btn-large" data-transition="slidefade"><i class="large material-icons">history</i></a></li>
+      <li><a href="#pagefour" class="btn-floating orange btn-large" data-transition="slidefade"><i class="large material-icons">report_problem</i></a></li>
+                  <!-- History and Trad-->
+
+    </ul>
+  </div>
+
+
+<h1>
+  Food!
+</h1>
+
+<div class="card">
+  <div class="card-image waves-effect waves-block waves-light">
+    <img class="activator" src="pp.jpg">
+  </div>
+  <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4">Pansit Pusit<i class="material-icons right">more_vert</i></span>
+    <p><a href="https://www.google.com/maps/place/Bernie's+Kitchenette+-+Cavite+City/@14.479649,120.8973307,17z/data=!4m5!3m4!1s0x3397cd3516143a03:0x9b06d438e308a22e!8m2!3d14.479649!4d120.8973307?hl=en">Available at Bernie's Kitchenette</a></p>
+  </div>
+  <div class="card-reveal">
+    <span class="card-title grey-text text-darken-4">Pansit Pusit<i class="material-icons right">close</i></span>
+    <br>
+    <p>Want to try some exotic food unique only to Cavite City? Eat some of our Pansit Pusit. This noodle dish is unlike your well-known pancit bihon, instead of pork or chicken, we use squid and its ink, that is why it is black. Fear not of the food’s color but the chance you will miss if you don’t give this a try!
+      
+       </p>
+    <iframe width=auto src="https://www.youtube.com/embed/LPzy71-M0-g?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-image waves-effect waves-block waves-light">
+    <img class="activator" src="Bacalao2.jpg">
+  </div>
+  <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4">Bacalao<i class="material-icons right">more_vert</i></span>
+    <p><a href="https://www.google.com/maps/place/Bernie's+Kitchenette+-+Cavite+City/@14.479649,120.8973307,17z/data=!4m5!3m4!1s0x3397cd3516143a03:0x9b06d438e308a22e!8m2!3d14.479649!4d120.8973307?hl=en">Available at Bernie's Kitchenette</a></p>
+  </div>
+  <div class="card-reveal">
+    <span class="card-title grey-text text-darken-4">Bacalao<i class="material-icons right">close</i></span>
+    <br>
+    <p>What about some historically inherited food? Bacalao is a popular salted cod fish dish that we inherited from the Portuguese from the Spanish occupation. This food is present in every Lenten season, especially on Good Friday. A dish worthy of your taste buds! </p>
+    <iframe width=auto src="https://www.youtube.com/embed/dX10P4ZH6Jo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-image waves-effect waves-block waves-light">
+    <img class="activator" src="bibingkoy2.jpg">
+  </div>
+  <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4">Aling Ika's Bibingkoy<i class="material-icons right">more_vert</i></span>
+    <p><a href="https://www.google.com/maps/place/Aling+Ika+Carinderia/@14.4779176,120.8972124,17z/data=!3m1!4b1!4m5!3m4!1s0x3397cd2729236e29:0x1a6cf37fcad79c5c!8m2!3d14.4779143!4d120.8994067">Available at Aling Ika</a></p>
+  </div>
+  <div class="card-reveal">
+    <span class="card-title grey-text text-darken-4">Aling Ika's Bibingkoy<i class="material-icons right">close</i></span>
+    <br>
+    <p>You found yourself short on cash, what do you do? Eat in our very own Aling Ika’s Carinderia Dishes. Not only do you feel the Caviteño’s love for food but also deliver you with dishes that are within your budget and superb in taste. But don’t forget to taste their special Bibingkoy, words cannot describe their dish. Let your taste buds explain! (P.S. Pair it with “Ginataan” and you will feel heaven!) </p>
+    <iframe width=auto src="https://www.youtube.com/embed/mgMtB_cYqTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+  </div>
+</div>
+<!--
+<div class="card">
+  <div class="card-image waves-effect waves-block waves-light">
+    <img class="activator" src="pipian1.jpg">
+  </div>
+  <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4">Pipian<i class="material-icons right">more_vert</i></span>
+    <p><a href="https://www.google.com/maps/place/Bernie's+Kitchenette+-+Cavite+City/@14.479649,120.8973307,17z/data=!4m5!3m4!1s0x3397cd3516143a03:0x9b06d438e308a22e!8m2!3d14.479649!4d120.8973307?hl=en">Explore our cuisine!</a></p>
+  </div>
+  <div class="card-reveal">
+    <span class="card-title grey-text text-darken-4">Pipian (Kare Kareng Manok)<i class="material-icons right">close</i></span>
+    <br>
+    <p>You see Caviteños are really resourceful, when things are expensive, we find ways! This Pipian dish is actually another Spanish inspired dish which is similar to kare-kare but uses chicken instead of beef. Although it has very few ingredients, the taste will leave you savoring for more. Tara, let’s eat! </p>
+    <iframe width=auto src="https://www.youtube.com/embed/1dZTD7QlB3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  </div>
+</div>
+-->
+<div class="card">
+  <div class="card-image waves-effect waves-block waves-light">
+    <img class="activator" src="patandsam1.jpg">
+  </div>
+  <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4">Pat and Sam's Pastries<i class="material-icons right">more_vert</i></span>
+    <p><a href="https://www.google.com/maps/place/Pat+And+Sam+Delicious+And+Pasalubong/@14.4694974,120.8843428,15z/data=!4m5!3m4!1s0x339632cab9e007d3:0x50fff1dee39fbee6!8m2!3d14.4788488!4d120.8953803">Available at Pat and Sam</a></p>
+  </div>
+  <div class="card-reveal">
+    <span class="card-title grey-text text-darken-4">Pat and Sam Pasalubong<i class="material-icons right">close</i></span>
+    <br>
+    <p>No preservatives? No problem. In Pat and Sam Delicacies and Pasalubong, you are ensured to eat some rice cakes without a hint of preservatives. They are 100% natural and 200% delicious!</p>
+    <iframe width=auto src="https://www.youtube.com/embed/5WvD-pvQ8Us" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+  </div>
+</div>
+
+  
+  
+
+          
+</div>
+<!--
+
+Third Page Code
+
+  !-->
+
+
+</div>
+</div>
+</div>
+
+<div data-role="page" id="pagefour" data-theme="f" data-transition="slidefade">
+  <div data-role="footer" data-position="fixed" data-theme="f">
+        <!--
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="home"> </a></li>
+        <li><a href="#pagetwo" data-icon="location"></a></li>
+        <li><a href="#pagethree" data-icon="shop"></a></li>
+        <li><a href="#pagefour" data-icon="alert"></a></li>
+      </ul>
+    </div> 
+  -->
+  </div>
+<div class="container">
+
+  <div class="fixed-action-btn">
+    <a href="#" class="btn-floating red btn-large"><i class="large material-icons">map</i></a>
+    <ul>
+      <li><a href="#pageone" class="btn-floating purple btn-large" data-transition="slidefade"><i class="large material-icons">home</i></a></li>
+      <li><a href="#pagetwo" class="btn-floating blue btn-large" data-transition="slidefade"><i class="large material-icons">place</i></a></li>
+      <li><a href="#pagethree" class="btn-floating green btn-large" data-transition="slidefade"><i class="large material-icons">local_mall</i></a></li>
+      <li><a href="#pagefive" class="btn-floating orange darken-3 btn-large" data-transition="slidefade"><i class="large material-icons">history</i></a></li>
+      <li><a href="#pagefour" class="btn-floating orange btn-large" data-transition="slidefade"><i class="large material-icons">report_problem</i></a></li>
+    </ul>
+  </div>
+  <h1>
+    Safety
+  </h1>
+  <div class="card-panel red">
+    <span class="white-text"><h2>Incase of Emergency, Call the Following:</h2>
+    </span>
+
+<center>
+  <h2>Checkpoint</h2>
+  <a href="tel: 046 431 2465" class="btn btn-large green"><i class="material-icons left">home</i> Checkpoint</a>
+  <h2>Fire Station</h2>
+  <a href="tel: 046 431 0308"class="btn btn-large green"><i class="material-icons left">add_alert</i> Fire Station</a>
+  <h2>Health Department</h2>
+  <a href="tel: 046 431 0752" class="btn btn-large green"><i class="material-icons left">healing</i> Health Dept.</a>
+  <h2>Police Station</h2>
+  <a href="tel: 046 431 2292" class="btn btn-large green"><i class="material-icons left">security</i> Police Station</a>
+  <h2>Red Cross</h2>
+  <a href="tel: 046 431 0562" class="btn btn-large green"><i class="material-icons left">add_circle</i> Red Cross</a>
+ 
+
+
+</center>
+<h2>Incase of a Natural Disaster</h2>
+
+<!---
+<ul class="collapsible" data-collapsible="accordion">
+  <li>
+    <div class="collapsible-header">
+      <i class="material-icons">add_alert</i>Fire 
+    </div>
+    <div class="collapsible-body">
+      <span><img src="fire1.png" height=350px></span>
+    </div>
+  </li>
+  <li>
+    <div class="collapsible-header active">
+      <i class="material-icons">cloud</i>Flood 
+    </div>
+    <div class="collapsible-body">
+      <span><img src="flood1.jpg" height=300px></span>
+    </div>
+  </li>
+  <li>
+    <div class="collapsible-header">
+      <i class="material-icons">warning</i>Earthquake
+    </div>
+    <div class="collapsible-body">
+      <span><img src="quake1.jpg" height=650px></span>
+    </div>
+  </li>
+  <li>
+  <div class="collapsible-header">
+    <i class="material-icons">add_circle</i>Wound
+  </div>
+  <div class="collapsible-body">
+    <span><img src="wound1.jpg" height=300px></span>
+  </div>
+</li>
+<li>
+<div class="collapsible-header">
+  <i class="material-icons">wb_sunny</i>Heat Stroke
+</div>
+<div class="collapsible-body">
+  <span><img src="quake1.jpg" height=600px></span>
+</div>
+</li>
+</ul>
+-->
+  </div>
+
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card">
+        <div class="card-image">
+          <img src="fire2.png">
+          <span class="card-title">Fire Safety</span>
+          <a href="#modalfire" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">map
+          </i></a>
+        </div>
+        <div class="card-content">
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalfire" class="modal">
+    <div class="modal-content">
+      <img src="fire1.png" height=700px>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card">
+        <div class="card-image">
+          <img src="flood2.jpg">
+          <span class="card-title">Flood Safety</span>
+          <a href="#modalflood" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">map
+          </i></a>
+        </div>
+        <div class="card-content">
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalflood" class="modal">
+    <div class="modal-content">
+      <img src="flood1.jpg" height=1000px>
+    </div>
+  </div>
+
+  
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card">
+        <div class="card-image">
+          <img src="quake2.jpg">
+          <span class="card-title">Earthquake Safety</span>
+          <a href="#modalquake" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">map
+          </i></a>
+        </div>
+        <div class="card-content">
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalquake" class="modal">
+    <div class="modal-content">
+      <img src="quake1.jpg" height=1200px>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card">
+        <div class="card-image">
+          <img src="wound2.jpg">
+          <span class="card-title">Wound First Aid</span>
+          <a href="#modalwound" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">map
+          </i></a>
+        </div>
+        <div class="card-content">
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalwound" class="modal">
+    <div class="modal-content">
+      <img src="wound1.jpg" height=700px>
+    </div>
+  </div>
+
+  <h2> "Safety brings first aid to the uninjured. – F.S. Hughes" </h2>
+
+</div>
+</div>
+
+
+
+
+<div data-role="page" id="pagefive" data-theme="f" data-transition="slidefade">
+  <div data-role="footer" data-position="fixed" data-theme="f">
+        <!--
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="home"> </a></li>
+        <li><a href="#pagetwo" data-icon="location"></a></li>
+        <li><a href="#pagethree" data-icon="shop"></a></li>
+        <li><a href="#pagefour" data-icon="alert"></a></li>
+      </ul>
+    </div> 
+  -->
+  </div>
+<div class="container">
+
+  <div class="fixed-action-btn">
+    <a href="#" class="btn-floating red btn-large"><i class="large material-icons">map</i></a>
+    <ul>
+      <li><a href="#pageone" class="btn-floating purple btn-large" data-transition="slidefade"><i class="large material-icons">home</i></a></li>
+      <li><a href="#pagetwo" class="btn-floating blue btn-large" data-transition="slidefade"><i class="large material-icons">place</i></a></li>
+      <li><a href="#pagethree" class="btn-floating green btn-large" data-transition="slidefade"><i class="large material-icons">local_mall</i></a></li>
+      <li><a href="#pagefive" class="btn-floating orange darken-3 btn-large" data-transition="slidefade"><i class="large material-icons">history</i></a></li>
+      <li><a href="#pagefour" class="btn-floating orange btn-large" data-transition="slidefade"><i class="large material-icons">report_problem</i></a></li>
+
+    </ul>
+  </div>
+  <h1>
+    Tradition and History
+  </h1>
+
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="porta3.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><h4>Fiesta of the Porta Vaga</h4><i class="material-icons right">more_vert</i></span>
+<p>Learn more about the City's Reyna!</p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Fiesta of the Porta Vaga<i class="material-icons right">close</i></span>
+      <br>
+      <p>Every second Sunday of November, we, Caviteños, celebrate a special festival for Our Lady of Porta Vaga. It is without a doubt that we are religious and no wonder that in almost every home, altars and doorsteps are not complete without an image of the Soledad. This just implies the myriad of miracles and blessings that the Soledad have given us. Join our religious festival to celebrate the “Queen of Cavite”.</p>
+      
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="porta1.jpg" alt="">
+          </li>
+          <li>
+            <img src="porta2.jpg" alt="">
+    
+          </li>
+          <li>
+            <img src="porta3.jpg" alt="">
+    
+          </li>
+        </ul>
+      </div>
+    
+    </div>
+  </div>
+
+
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="regada3.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><h4>Regada Festival</h4><i class="material-icons right">more_vert</i></span>
+<p>Learn more about the annual water festival!</p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Regada Festival<i class="material-icons right">close</i></span>
+      <br>
+      <p>“Bawal ang pikon” is the saying of every caviteño once June 24 of every year comes. It basically means that you don’t have the right to be angry. “Why”, you ask? Because in every street, corner or house in cavite city, you will get splashed by water! This traditional event is our way to celebrate in honor of the feast of our Patron, Saint John the Baptist. (Pro Tip: Bring a WATER GUN!)</p>
+      
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="regada1.jpg" alt="">
+          </li>
+          <li>
+            <img src="regada2.jpg" alt="">
+    
+          </li>
+          <li>
+            <img src="regada3.jpg" alt="">
+    
+          </li>
+        </ul>
+      </div>
+    
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="navidad1.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><h4>Navidad Festival</h4><i class="material-icons right">more_vert</i></span>
+<p>From bangenges to parols, here is what in store for you when you join the navidad festival!</p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Navidad Festival<i class="material-icons right">close</i></span>
+      <br>
+      <p>Let’s watch the creativity from Cavite City! Navidad is a tradition around the second week of December. Here you will witness the different entries of different schools for the Pasiklaban ng mga Bangenge (gigantic paper maches competition), Parada ng mga Kuneho(Rabbit Parade) and Lantern Making Contest. All of these majestic competitions display the creativity of all ages!</p>
+      
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="navidad1.jpg" alt="">
+          </li>
+          <li>
+            <img src="bangenge1.jpg" alt="">
+    
+          </li>
+          <li>
+            <img src="bangenge2.jpg" alt="">
+          </li>
+          <li>
+            <img src="navidad2.jpg" alt="">
+          </li>
+          <li>
+            <img src="bangenge3.jpg" alt="">
+          </li>
+          <li>
+            <img src="bunny1.jpg" alt="">
+          </li>
+          <li>
+            <img src="bangenge4.jpg" alt="">
+          </li>
+        </ul>
+      </div>
+    
+    </div>
+  </div>
+
+  
+  
+
+
+
+
+</div>
+</div>
+
+
+<!--
+
+Fourth Page Code
+
+  !-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+      <script>
+          $('.carousel.carousel-slider').carousel({
+    fullWidth: true
+  });
+        
+
+
+        $(document).ready(function(){
+          // Init Carousel
+          $('.carousel').carousel();
+
+          // Init Carousel Slider
+          $('.carousel.carousel-slider').carousel({fullWidth:true});
+
+          // Fire off toast
+          Materialize.toast('Hello User! Welcome to CaviteKnows, take a look at Cavite City while were loading the Application! Thanks and Stay Safe! (CaviteKnows | Beta 0.6) ', 3000);
+
+          // Init Slider
+          $('.slider').slider();
+
+          // Init Modal
+          $('.modal').modal();
+
+          // Init Sidenav
+          $('.button-collapse').sideNav();
+        });
+      </script>
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
